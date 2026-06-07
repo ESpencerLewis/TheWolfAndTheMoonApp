@@ -1,0 +1,26 @@
+{
+  "name": "Donation",
+  "type": "object",
+  "properties": {
+    "donor_name": {
+      "type": "string",
+      "description": "Donor's name"
+    },
+    "email": {
+      "type": "string",
+      "description": "Donor's email"
+    },
+    "amount": {
+      "type": "number",
+      "description": "Donation amount"
+    },
+    "message": {
+      "type": "string",
+      "description": "Optional message from donor"
+    }
+  },
+  "required": [
+    "email",
+    "amount"
+  ]
+}

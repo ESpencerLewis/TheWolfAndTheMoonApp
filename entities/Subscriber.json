@@ -1,0 +1,26 @@
+{
+  "name": "Subscriber",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Subscriber's name"
+    },
+    "email": {
+      "type": "string",
+      "description": "Email address"
+    },
+    "location": {
+      "type": "string",
+      "description": "City/region for tour notifications"
+    },
+    "notify_tours": {
+      "type": "boolean",
+      "default": true,
+      "description": "Notify about nearby shows"
+    }
+  },
+  "required": [
+    "email"
+  ]
+}

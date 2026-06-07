@@ -1,0 +1,60 @@
+{
+  "name": "Episode",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Episode title"
+    },
+    "episode_number": {
+      "type": "number",
+      "description": "Episode number in the series"
+    },
+    "release_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Release date"
+    },
+    "music_file_url": {
+      "type": "string",
+      "description": "URL to downloadable music track"
+    },
+    "podcast_file_url": {
+      "type": "string",
+      "description": "URL to podcast audio"
+    },
+    "story_content": {
+      "type": "string",
+      "description": "Written story/read content"
+    },
+    "thumbnail_url": {
+      "type": "string",
+      "description": "Thumbnail image for the episode"
+    },
+    "video_url": {
+      "type": "string",
+      "description": "Background video for Listen and Read modes"
+    },
+    "music_video_url": {
+      "type": "string",
+      "description": "Music video for Watch mode"
+    },
+    "lyric_video_url": {
+      "type": "string",
+      "description": "Lyric video for Watch mode"
+    },
+    "description": {
+      "type": "string",
+      "description": "Brief description of the episode"
+    },
+    "is_latest": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether this is the latest/featured episode"
+    }
+  },
+  "required": [
+    "title",
+    "episode_number"
+  ]
+}
